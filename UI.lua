@@ -112,16 +112,8 @@ function Library.new(LibrarySettings)
 			local Top = Main.Top
 			Top.Title.Text = LibrarySettings.Name
 
-            local OPEN_TWEEN = Tween(Main, OPENCLOSE_INFO, {Size = Main.Size})
-			local CLOSE_TWEEN = Tween(Main, OPENCLOSE_INFO, {Size = UDim2.new(0, Main.Size.X.Offset, 0, 0)})
-			local Open = true
 			local function Toggle()
-				Open = not Open
-				if Open then
-					OPEN_TWEEN:Play()
-				else
-					CLOSE_TWEEN:Play()
-				end
+				Main.Visible = not Main.Visible
 			end
             Top.Close.MouseButton1Click:Connect(Toggle)
 			
