@@ -1,15 +1,16 @@
---//    UI Library
---//    6/20/2020
---//
---//    Library:
---//        .new(<string> Name, <Vector3> Size)
---//        :Create(<string> Class, <dictionary> Properties)
---//
---//	Toggle:
---//	Slider:
---//	Dropdown:
---//	Keybind:
---//
+--[[    UI Library
+        6/20/2020
+
+        Library:
+            .new(<string> Name, <Vector3> Size)
+            :Create(<string> Class, <dictionary> Properties)
+
+	Toggle:
+	Slider:
+	Dropdown:
+	Keybind:
+
+]]--
 
 local Library = {}
 
